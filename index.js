@@ -10,6 +10,8 @@ const PORT = process.env.PORT || 5000;
 // set static website
 //! if you want to make a dynamic website, you use template engines or front-end framework
 // app.use(express.static(path.join(__dirname, "public")));
+
+// view engine
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
